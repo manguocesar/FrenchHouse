@@ -2,10 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from 'next-i18next'
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { t } = useTranslation('common')
+
   return (
     <>
       <Head>
@@ -15,6 +20,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className="text-rose-600 flex justify-end">
+          <Link href="/another" locale="fr">
+            <p className="">{t('test')}</p>
+          </Link>
+        </div>
         <div className={styles.description}>
           <p className="text-xl">Getting started</p>
           <div className="text-5xl font-bold underline">Hello Test</div>
@@ -23,15 +33,16 @@ export default function Home() {
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="/next.svg"
+            src="/aimarchitecture.png"
             alt="Next.js Logo"
             width={180}
             height={37}
             priority
           />
           <div className={styles.thirteen}>
+            qdsqd
             <Image
-              src="/thirteen.svg"
+              src="/aimarchitecture.png"
               alt="13"
               width={40}
               height={31}
@@ -101,4 +112,13 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"]))
+      // Will be passed to the page component as props
+    }
+  };
 }

@@ -1,0 +1,13 @@
+{
+  "test": "Language changes",
+    "modal": {
+      "warn": "注意",
+      "msg": "Bluetoothがスピーカーに接続されていることを確認してください。",
+      "check": "未接続",
+      "confirm": "OK",
+      "confirmStop": "音楽を完全に停止します。よろしいですか？",
+      "resume": "いいえ",
+      "end": "終了"
+    }
+  }
+  
