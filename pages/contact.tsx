@@ -28,7 +28,7 @@ function Contact() {
       />
       <div className="flex items-center">
         {headerTitles.map((item, key) => (
-          <Link key={key} href={item} locale="fr">
+          <Link key={key} href={item}>
             <p
               className={
                 router.route == "/"
@@ -52,7 +52,7 @@ function Languages() {
   return (
     <div className="flex justify-end">
       {router.locale !== "fr" && (
-        <Link href="/another" locale="fr">
+        <Link href="/another">
           <p className="border p-3 m-2 bg-white">{t("header.fr")}</p>
         </Link>
       )}

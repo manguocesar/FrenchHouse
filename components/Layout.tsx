@@ -21,7 +21,7 @@ function Layout({ children }: any) {
         <Menu />
         {children}
       </main>
-      <p className="pt-5 text-center font-thin">{t("footer.allRights")}</p>
+      <p className="pt-5 text-center font-thin">{t("allRights")}</p>
     </>
   );
 }

@@ -1,5 +1,4 @@
 {
-  "test": "Language change",
   "header": {
     "fr": "French",
     "en": "English",
@@ -24,7 +23,5 @@
     "join": "Nous sommes un collectif de passionés individus",
     "backTop": "Nous sommes un collectif de passionés individus"
   },
-  "footer": {
-    "allRights": "2023-2007 AIM-Architecture Copyright @ All rights reserved. Privacy & Terms"
-  }
+  "allRights":  "2023-2007 AIM-Architecture Copyright - All rights reserved. Privacy & Terms"
 }

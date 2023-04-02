@@ -20,7 +20,7 @@ export default function Home() {
           className="basis-1/12"
           src="/designBg.jpg"
           alt="designBackground"
-          width={1200}
+          width={1800}
           height={200}
           priority
         />

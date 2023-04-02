@@ -20,7 +20,7 @@ export default function Home() {
     <Layout>
         <div>
           {headerTitles.map((item, key) => (
-            <Link key={key} href={item} locale="fr">
+            <Link key={key} href={item}>
               <p
                 className={
                   router.route == "/"
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div>
           {headerTitles.map((item, key) => (
-            <Link key={key} href={item} locale="fr">
+            <Link key={key} href={item}>
               <p
                 className={
                   router.route == "/"
@@ -48,7 +48,7 @@ export default function Home() {
             </Link>
           ))}
           {headerTitles.map((item, key) => (
-            <Link key={key} href={item} locale="fr">
+            <Link key={key} href={item}>
               <p
                 className={
                   router.route == "/"
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <div>
           {headerTitles.map((item, key) => (
-            <Link key={key} href={item} locale="fr">
+            <Link key={key} href={item}>
               <p
                 className={
                   router.route == "/"
