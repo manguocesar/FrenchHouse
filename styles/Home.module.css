@@ -7,21 +7,6 @@
   font-family: var(--font-mono);
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  /* border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius); */
-}
 
 .grid {
   display: grid;
@@ -56,14 +41,6 @@
   max-width: 30ch;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
@@ -88,10 +65,6 @@
   transform: translateZ(0);
 }
 
-.logo,
-.thirteen {
-  position: relative;
-}
 
 .thirteen {
   display: flex;

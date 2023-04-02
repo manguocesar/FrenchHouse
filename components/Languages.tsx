@@ -18,7 +18,7 @@ function Languages() {
           onClick={() => {
             changeLang("fr");
           }}
-          className="border p-3 m-2 bg-white"
+          className="border p-3 m-2 bg-white cursor-pointer hover:opacity-80"
         >
           {t("header.fr")}
         </p>
@@ -28,7 +28,7 @@ function Languages() {
           onClick={() => {
             changeLang("en");
           }}
-          className="border p-3 m-2 bg-white"
+          className="border p-3 m-2 bg-white cursor-pointer hover:opacity-80"
         >
           {t("header.en")}
         </p>
@@ -38,7 +38,7 @@ function Languages() {
           onClick={() => {
             changeLang("ch");
           }}
-          className="border p-3 m-2 bg-white"
+          className="border p-3 m-2 bg-white cursor-pointer hover:opacity-80"
         >
           {t("header.ch")}
         </p>
