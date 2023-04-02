@@ -34,11 +34,6 @@
   border-radius: var(--border-radius);
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
