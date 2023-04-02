@@ -20,7 +20,7 @@ function Menu() {
       />
       <div className="flex items-center">
         {headerTitles.map((item, key) => (
-          <Link key={key} href={item} locale="fr">
+          <Link key={key} href={item}>
             <p
               className={
                 router.route == "/"

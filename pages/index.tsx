@@ -34,6 +34,7 @@ export default function Home() {
           {t("home.passionateCollectiveTxt")}
         </p>
       </div>
+      <p className="pt-5 text-center font-thin">{t("allRights")}</p>
     </Layout>
   );
 }
