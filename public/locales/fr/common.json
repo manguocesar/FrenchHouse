@@ -1,12 +1,17 @@
 {
   "test": "Language changes",
-  "modal": {
-    "warn": "注意",
-    "msg": "Bluetoothがスピーカーに接続されていることを確認してください。",
-    "check": "未接続",
-    "confirm": "OK",
-    "confirmStop": "音楽を完全に停止します。よろしいですか？",
-    "resume": "いいえ",
-    "end": "終了"
+  "header": {
+    "fr": "Français",
+    "en": "Anglais",
+    "ch": "Chinois"
+  },
+  "home": {
+    "weDesign": "NOUS DESIGNONS",
+    "theathersForLife": "THEATRES POUR LA VIE",
+    "passionateCollective": "Nous sommes un collectif de passionés individus",
+    "passionateCollectiveTxt": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem "
+  },
+  "footer": {
+    "allRights": "2023-2007 AIM-Architecture Copyright @ All rights reserved. Privacy & Terms"
   }
 }

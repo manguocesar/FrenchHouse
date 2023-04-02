@@ -4,12 +4,73 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
+function Menu() {
+  const headerTitles = ["/", "projects", "about", "news", "careers", "contact"];
+
+
+  const router = useRouter();
+
+  return (
+    <div className={styles.description}>
+      <Image
+        className="basis-1/12"
+        src="/aimarchitecture.png"
+        alt="Next.js Logo"
+        width={180}
+        height={37}
+        priority
+      />
+      <div className="flex items-center">
+        {headerTitles.map((item, key) => (
+          <Link key={key} href={item} locale="fr">
+            <p
+              className={
+                router.route == "/"
+                  ? "uppercase px-8 font-semibold border-x text-xl hover:opacity-60"
+                  : "uppercase px-10 font-light border border-600 text-xs hover:opacity-60"
+              }
+            >
+              {item === "/" ? "Home" : item }
+            </p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+function Languages() {
+  const { t } = useTranslation("common");
+
+  const router = useRouter();
+
+  return (
+    <div className="flex justify-end">
+      {router.locale !== "fr" && (
+        <Link href="/another" locale="fr">
+          <p className="border p-3 m-2 bg-white">{t("header.fr")}</p>
+        </Link>
+      )}
+      {router.locale !== "en" && (
+        <Link href="/another" locale="en">
+          <p className="border p-3 m-2 bg-white">{t("header.en")}</p>
+        </Link>
+      )}
+      {router.locale !== "ch" && (
+        <Link href="/another" locale="ch">
+          <p className="border p-3 m-2 bg-white">{t("header.ch")}</p>
+        </Link>
+      )}
+    </div>
+  );
+}
+
 export default function Home() {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation("common");
 
   return (
     <>
@@ -19,96 +80,34 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className="text-rose-600 flex justify-end">
-          <Link href="/another" locale="fr">
-            <p className="">{t('test')}</p>
-          </Link>
-        </div>
-        <div className={styles.description}>
-          <p className="text-xl">Getting started</p>
-          <div className="text-5xl font-bold underline">Hello Test</div>
-        </div>
-
-        <div className={styles.center}>
+      <main className="flex flex-col p-10 bg-gray-50">
+        <Languages />
+        <Menu />
+        <div className="flex flex-col pt-5">
+          <p className="text-3xl font-medium pt-3">{t("home.weDesign")}</p>
+          <p className="py-3 1 text-7xl font-extrabold">
+            {t("home.theathersForLife")}
+          </p>
           <Image
-            className={styles.logo}
-            src="/aimarchitecture.png"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
+            className="basis-1/12"
+            src="/designBg.jpg"
+            alt="designBackground"
+            width={1200}
+            height={200}
             priority
           />
-          <div className={styles.thirteen}>
-            qdsqd
-            <Image
-              src="/aimarchitecture.png"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
+        </div>
+        <div className="flex flex-col p-3">
+          <p className="py-3 text-xl w-6/12 font-thin uppercase">
+            {t("home.passionateCollective")}
+          </p>
+          <p className="text-lg w-8/12 leading-8 font-thin text-justify">
+            {t("home.passionateCollectiveTxt")}{" "}
+            {t("home.passionateCollectiveTxt")}
+          </p>
         </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        <p className="pt-5 text-center font-thin">{t("footer.allRights")}</p>
       </main>
     </>
   );
