@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p className="text-xl">Getting started</p>
-          <div className="text-5xl font-bold underline">Hello</div>
+          <div className="text-5xl font-bold underline">Hello Test</div>
         </div>
 
         <div className={styles.center}>
