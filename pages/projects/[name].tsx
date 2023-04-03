@@ -8,7 +8,6 @@ const Post = () => {
   const { name } = router.query;
 
   const object = projects.find((item) => item.title === name);
-  console.log(object?.types);
 
   return (
     <Layout>

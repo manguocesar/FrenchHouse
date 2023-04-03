@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
 import { useState } from "react";
 import Image from "next/image";
-import projects from "../const/projects.json"
+import projects from "../const/projects.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,33 +62,38 @@ export default function Home() {
             .sort((a, b) => 0.5 - Math.random())
             .map((item, index) => (
               <p className="p-2 cursor-pointer" key={index}>
-              <Link href={`/projects/${item.title}`}
-                onMouseOver={() => {
-                  displayPicture();
-                }}
-                
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize font-semibold text-lg hover:opacity-60"
-                    : "capitalize font-light text-md hover:opacity-60"
-                }
-              >
-                {item.title}
+                <Link
+                  href={`/projects/${item.title}`}
+                  onMouseOver={() => {
+                    displayPicture();
+                  }}
+                  className={
+                    item.types.includes(keyword)
+                      ? "capitalize font-semibold text-lg hover:opacity-60"
+                      : "capitalize font-light text-md hover:opacity-60"
+                  }
+                >
+                  {item.title.replaceAll("_", " ")}
                 </Link>
-                </p>
+              </p>
             ))}
           {projects
             .sort((a, b) => 0.5 - Math.random())
             .map((item, index) => (
-              <p
-                key={index}
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
-                    : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
-                }
-              >
-                {item.title}
+              <p className="p-2 cursor-pointer" key={index}>
+                <Link
+                  href={`/projects/${item.title}`}
+                  onMouseOver={() => {
+                    displayPicture();
+                  }}
+                  className={
+                    item.types.includes(keyword)
+                      ? "capitalize font-semibold text-lg hover:opacity-60"
+                      : "capitalize font-light text-md hover:opacity-60"
+                  }
+                >
+                  {item.title.replaceAll("_", " ")}
+                </Link>
               </p>
             ))}
         </div>
@@ -96,15 +101,20 @@ export default function Home() {
           {projects
             .sort((a, b) => 0.5 - Math.random())
             .map((item, index) => (
-              <p
-                key={index}
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
-                    : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
-                }
-              >
-                {item.title}
+              <p className="p-2 cursor-pointer" key={index}>
+                <Link
+                  href={`/projects/${item.title}`}
+                  onMouseOver={() => {
+                    displayPicture();
+                  }}
+                  className={
+                    item.types.includes(keyword)
+                      ? "capitalize font-semibold text-lg hover:opacity-60"
+                      : "capitalize font-light text-md hover:opacity-60"
+                  }
+                >
+                  {item.title.replaceAll("_", " ")}
+                </Link>
               </p>
             ))}
         </div>
@@ -114,43 +124,58 @@ export default function Home() {
           {projects
             .sort((a, b) => 0.5 - Math.random())
             .map((item, index) => (
-              <p
-                key={index}
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
-                    : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
-                }
-              >
-                {item.title}
+              <p className="p-2 cursor-pointer" key={index}>
+                <Link
+                  href={`/projects/${item.title}`}
+                  onMouseOver={() => {
+                    displayPicture();
+                  }}
+                  className={
+                    item.types.includes(keyword)
+                      ? "capitalize font-semibold text-lg hover:opacity-60"
+                      : "capitalize font-light text-md hover:opacity-60"
+                  }
+                >
+                  {item.title.replaceAll("_", " ")}
+                </Link>
               </p>
             ))}
           {projects
             .sort((a, b) => 0.5 - Math.random())
             .map((item, index) => (
-              <p
-                key={index}
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
-                    : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
-                }
-              >
-                {item.title}
+              <p className="p-2 cursor-pointer" key={index}>
+                <Link
+                  href={`/projects/${item.title}`}
+                  onMouseOver={() => {
+                    displayPicture();
+                  }}
+                  className={
+                    item.types.includes(keyword)
+                      ? "capitalize font-semibold text-lg hover:opacity-60"
+                      : "capitalize font-light text-md hover:opacity-60"
+                  }
+                >
+                  {item.title.replaceAll("_", " ")}
+                </Link>
               </p>
             ))}
           {projects
             .sort((a, b) => 0.5 - Math.random())
             .map((item, index) => (
-              <p
-                key={index}
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
-                    : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
-                }
-              >
-                {item.title}
+              <p className="p-2 cursor-pointer" key={index}>
+                <Link
+                  href={`/projects/${item.title}`}
+                  onMouseOver={() => {
+                    displayPicture();
+                  }}
+                  className={
+                    item.types.includes(keyword)
+                      ? "capitalize font-semibold text-lg hover:opacity-60"
+                      : "capitalize font-light text-md hover:opacity-60"
+                  }
+                >
+                  {item.title.replaceAll("_", " ")}
+                </Link>
               </p>
             ))}
         </div>

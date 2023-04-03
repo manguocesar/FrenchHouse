@@ -20,7 +20,7 @@ function Menu() {
       />
       <div className="flex items-center">
         {headerTitles.map((item, index) => (
-          <Link key={index} href={item}>
+          <Link key={index} href={`/${item}`}>
             <p
               className={
                  item === router.asPath || item ===  router.asPath.substring(1)
