@@ -3,6 +3,20 @@ import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 import Languages from "./Languages";
 import Menu from "./Menu";
+import { faInstagram, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import React from "react";
+
+function Social() {
+  return (
+    <div className="flex mx-auto my-2">
+      <FontAwesomeIcon className="cursor-pointer mx-4 w-8"  icon={faInstagram} />
+      <FontAwesomeIcon className="cursor-pointer mx-4 w-8"  icon={faLinkedin} />
+      <FontAwesomeIcon className="cursor-pointer mx-4 w-8"  icon={faFacebook} />
+    </div>
+  );
+}
 
 function Layout({ children }: any) {
   const { t } = useTranslation("common");
@@ -20,6 +34,7 @@ function Layout({ children }: any) {
         <Languages />
         <Menu />
         {children}
+        <Social />
       </main>
     </>
   );

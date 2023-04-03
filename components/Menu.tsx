@@ -12,10 +12,10 @@ function Menu() {
     <div className="flex justify-between mb-10">
       <Image
         className="basis-1/12"
-        src="/aimarchitecture.png"
+        src="/frenchHouse.png"
         alt="Next.js Logo"
-        width={180}
-        height={37}
+        width={140}
+        height={40}
         priority
       />
       <div className="flex items-center">

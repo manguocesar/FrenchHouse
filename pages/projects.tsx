@@ -14,26 +14,25 @@ export default function Home() {
   const [keyword, setKeyword] = useState("");
   const [display, setDisplay] = useState(false);
   const headerTitles = [
-    "commercial",
-    "cultural",
-    "planning",
+    "offices",
+    "food & beverage",
+    "retail",
     "hospitality",
-    "office",
-    "retails"
+    "industrial"
   ];
 
   const projects = [
     {
       title: "project A",
-      type: "commercial"
+      type: "offices"
     },
     {
       title: "project B",
-      type: "cultural"
+      type: "food & beverage"
     },
     {
       title: "project C",
-      type: "planning"
+      type: "retail"
     },
     {
       title: "project D",
@@ -41,11 +40,7 @@ export default function Home() {
     },
     {
       title: "project E",
-      type: "office"
-    },
-    {
-      title: "project F",
-      type: "retails"
+      type: "industrial"
     }
   ];
   const router = useRouter();

@@ -5,11 +5,12 @@
     "ch": "Chinese"
   },
   "home": {
-    "weDesign": "NOUS DESIGNONS",
-    "theathersForLife": "THEATRES POUR LA VIE",
-    "passionateCollective": "Nous sommes un collectif de passionés individus",
-    "passionateCollectiveTxt": "Nous sommes un collectif de passionés individus Nous sommes un collectif de passionés individus Nous sommes un collectif de passionés individus"
-  },
+    "customDesign": "Custom Design",
+    "frenchHouse": "French House",
+    "activity": "Interior Design & Construction Consultant",
+    "whoWeAre": "FRENCH HOUSE is an Architecture, Interior, Engineering Design Company focusing on creating and delivering End-Use-Focused Facilities.",
+    "whoWeAreTxt": "As a global design company, our innovative projects enhance how people interact with their work environment to achieve business, people, space and brand objectives"
+   },
   "about": {
     "Txt": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
     "TxtTwo": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
@@ -35,5 +36,5 @@
     "moreInfo": "More info here",
     "linkedin": "linkedin address"
   },
-  "allRights":  "2023-2007 FrenchHouse Copyright - All rights reserved. Privacy & Terms"
+  "allRights":  "2023-1976 FrenchHouse Copyright - All rights reserved. Privacy & Terms"
 }

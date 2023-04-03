@@ -11,10 +11,13 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="flex flex-col pt-5">
-        <p className="text-3xl font-medium pt-3">{t("home.weDesign")}</p>
-        <p className="py-3 1 text-7xl font-extrabold">
-          {t("home.theathersForLife")}
+      <div className="flex flex-col">
+        <p className="text-3xl font-medium">{t("home.customDesign")}</p>
+        <p className="py-1 text-6xl font-extrabold">
+          {t("home.frenchHouse")}
+        </p>
+        <p className="py-3 1 text-3xl font-extralight">
+          {t("home.activity")}
         </p>
         <Image
           className="basis-1/12"
@@ -26,15 +29,14 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col p-3">
-        <p className="py-3 text-xl w-6/12 font-thin uppercase">
-          {t("home.passionateCollective")}
+        <p className="py-3 text-xl w-6/12 font-thin">
+          {t("home.whoWeAre")}
         </p>
         <p className="text-lg w-8/12 leading-8 font-thin text-justify">
-          {t("home.passionateCollectiveTxt")}{" "}
-          {t("home.passionateCollectiveTxt")}
+          {t("home.whoWeAreTxt")}
         </p>
       </div>
-      <p className="pt-5 text-center font-thin">{t("allRights")}</p>
+      <p className="pt-5 text-lg text-center font-thin">{t("allRights")}</p>
     </Layout>
   );
 }
