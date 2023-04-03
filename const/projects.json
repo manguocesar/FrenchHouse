@@ -1,0 +1,89 @@
+[{
+    "title": "HTEG (For Versace)",
+    "types": ["offices", "hospitality", "industrial"],
+    "buildings": "WAREHOUSE + OFFICE BUILDING+ 6 VILLAS + LANDSCAPE",
+    "services": ["Façade & Interior Design", "Landscape", "Tendering"],
+    "location": "Shanghai，China",
+    "surface": "5,000"
+  },
+  {
+    "title": "RUICHI",
+    "types": ["offices", "hospitality"],
+    "buildings": "OFFICE + R&D CENTER + TRAINING CENTER + HOTEL BUILDING",
+    "services": [
+      "Interior Design",
+      "Project Management",
+      "Tendering",
+      "MEP drawings MEP",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Zhengzhou，Henan",
+    "surface": "85,000"
+  },
+  {
+    "title": "PRD (For LVMH Perfumes & Cosmetics)",
+    "types": ["offices", "hospitality"],
+    "buildings": "OFFICE + WAREHOUSES",
+    "services": [
+      "Design review",
+      "Material review",
+      "Project Management",
+      "Cost management"
+    ],
+    "location": "Shanghai，China",
+    "surface": "115,000"
+  },
+  {
+    "title": "ERLAB",
+    "types": ["offices", "hospitality"],
+    "buildings": "OFFICE +SHOWROOM + FACTORY",
+    "services": [
+      "Design review",
+      "Material review",
+      "Project Management",
+      "Cost management"
+    ],
+    "location": "Kunshan, China ",
+    "surface": "6,500"
+  },
+  {
+    "title": "FABERNOVEL / EY",
+    "types": ["offices"],
+    "buildings": "OFFICES + PANTRY + EVENT AREA",
+    "services": [
+      "Design review",
+      "Material review",
+      "Project Management",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "1,200"
+  },
+  {
+    "title": "COZY STEPS",
+    "types": ["offices", "retail"],
+    "buildings": "OFFICES + RETAIL",
+    "services": [
+      "Design review",
+      "Material review",
+      "Project Management",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "700"
+  },
+  {
+    "title": "TSUBO",
+    "types": ["offices", "retail", "food & beverage"],
+    "buildings": "FLAGSHIP STORE OFFICE + RETAIL + F&B",
+    "services": [
+      "Design review",
+      "Material review",
+      "Project Management",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "350"
+  }
+]

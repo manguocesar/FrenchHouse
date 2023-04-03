@@ -19,8 +19,8 @@ function Menu() {
         priority
       />
       <div className="flex items-center">
-        {headerTitles.map((item, key) => (
-          <Link key={key} href={item}>
+        {headerTitles.map((item, index) => (
+          <Link key={index} href={item}>
             <p
               className={
                  item === router.asPath || item ===  router.asPath.substring(1)

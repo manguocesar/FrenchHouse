@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
 import { useState } from "react";
 import Image from "next/image";
+import projects from "../const/projects.json"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,41 +22,17 @@ export default function Home() {
     "industrial"
   ];
 
-  const projects = [
-    {
-      title: "project A",
-      type: "offices"
-    },
-    {
-      title: "project B",
-      type: "food & beverage"
-    },
-    {
-      title: "project C",
-      type: "retail"
-    },
-    {
-      title: "project D",
-      type: "hospitality"
-    },
-    {
-      title: "project E",
-      type: "industrial"
-    }
-  ];
-  const router = useRouter();
-
   const changeSelection = (selection: string) => setKeyword(selection);
   const displayPicture = () => setDisplay(true);
 
   return (
     <Layout>
-      <div className="flex justify-between">
+      <div className="flex">
         {/* left list */}
-        <div>
-          {headerTitles.map((item, key) => (
+        <div className="w-3/12">
+          {headerTitles.map((item, index) => (
             <p
-              key={key}
+              key={index}
               onClick={() => {
                 changeSelection(item);
               }}
@@ -73,7 +50,7 @@ export default function Home() {
               className="absolute"
               src="/designBg.jpg"
               alt="designBackground"
-              width={200}
+              width={150}
               height={200}
               priority
             />
@@ -83,29 +60,31 @@ export default function Home() {
         <div>
           {projects
             .sort((a, b) => 0.5 - Math.random())
-            .map((item, key) => (
-              <p
+            .map((item, index) => (
+              <p className="p-2 cursor-pointer" key={index}>
+              <Link href={`/projects/${item.title}`}
                 onMouseOver={() => {
                   displayPicture();
                 }}
-                key={key}
+                
                 className={
-                  item.type === keyword
-                    ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
-                    : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
+                  item.types.includes(keyword)
+                    ? "capitalize font-semibold text-lg hover:opacity-60"
+                    : "capitalize font-light text-md hover:opacity-60"
                 }
               >
                 {item.title}
-              </p>
+                </Link>
+                </p>
             ))}
           {projects
             .sort((a, b) => 0.5 - Math.random())
-            .map((item, key) => (
+            .map((item, index) => (
               <p
-                key={key}
+                key={index}
                 className={
-                  item.type === keyword
-                    ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
+                  item.types.includes(keyword)
+                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
                     : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
                 }
               >
@@ -116,12 +95,12 @@ export default function Home() {
         <div>
           {projects
             .sort((a, b) => 0.5 - Math.random())
-            .map((item, key) => (
+            .map((item, index) => (
               <p
-                key={key}
+                key={index}
                 className={
-                  item.type === keyword
-                    ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
+                  item.types.includes(keyword)
+                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
                     : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
                 }
               >
@@ -134,12 +113,12 @@ export default function Home() {
         <div>
           {projects
             .sort((a, b) => 0.5 - Math.random())
-            .map((item, key) => (
+            .map((item, index) => (
               <p
-                key={key}
+                key={index}
                 className={
-                  item.type === keyword
-                    ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
+                  item.types.includes(keyword)
+                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
                     : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
                 }
               >
@@ -148,12 +127,12 @@ export default function Home() {
             ))}
           {projects
             .sort((a, b) => 0.5 - Math.random())
-            .map((item, key) => (
+            .map((item, index) => (
               <p
-                key={key}
+                key={index}
                 className={
-                  item.type === keyword
-                    ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
+                  item.types.includes(keyword)
+                    ? "capitalize p-2 font-semibold text-lg hover:opacity-60 cursor-pointer"
                     : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
                 }
               >
@@ -162,29 +141,11 @@ export default function Home() {
             ))}
           {projects
             .sort((a, b) => 0.5 - Math.random())
-            .map((item, key) => (
+            .map((item, index) => (
               <p
-                key={key}
+                key={index}
                 className={
-                  item.type === keyword
-                    ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
-                    : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
-                }
-              >
-                {item.title}
-              </p>
-            ))}
-        </div>
-
-        {/* last col */}
-        <div>
-          {projects
-            .sort((a, b) => 0.5 - Math.random())
-            .map((item, key) => (
-              <p
-                key={key}
-                className={
-                  item.type === keyword
+                  item.types.includes(keyword)
                     ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
                     : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
                 }
