@@ -8,6 +8,9 @@ function Menu() {
   const headerTitles = ["/", "projects", "about", "news", "careers", "contact"];
   const router = useRouter();
 
+console.log("router.route",router.asPath);
+
+
   return (
     <div className={styles.description}>
       <Image
@@ -23,9 +26,9 @@ function Menu() {
           <Link key={key} href={item}>
             <p
               className={
-                router.route == "/"
+                 item === router.asPath || item ===  router.asPath.substring(1)
                   ? "uppercase px-8 font-semibold border-x text-xl hover:opacity-60"
-                  : "uppercase px-10 font-light border border-600 text-xs hover:opacity-60"
+                  : "uppercase px-10 font-thin text-gray-600 border-x text-xl hover:opacity-60"
               }
             >
               {item === "/" ? "Home" : item}
