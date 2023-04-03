@@ -55,7 +55,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="flex justify-between mt-12">
+      <div className="flex justify-between">
         {/* left list */}
         <div>
           {headerTitles.map((item, key) => (

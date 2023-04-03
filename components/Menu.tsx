@@ -8,11 +8,8 @@ function Menu() {
   const headerTitles = ["/", "projects", "about", "news", "careers", "contact"];
   const router = useRouter();
 
-console.log("router.route",router.asPath);
-
-
   return (
-    <div className={styles.description}>
+    <div className="flex justify-between mb-10">
       <Image
         className="basis-1/12"
         src="/aimarchitecture.png"

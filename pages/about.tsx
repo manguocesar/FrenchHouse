@@ -15,8 +15,57 @@ export default function About() {
 
   return (
     <Layout>
-        <div className="flex flex-col pt-5">
-         
+      <div className="flex flex-col pt-5 mx-auto">
+        {/* pic one */}
+        <Image
+          className=""
+          src="/designBg.jpg"
+          alt="designBackground"
+          width={900}
+          height={200}
+          priority
+        />
+      </div>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("about.Txt")}
+      </p>
+
+      {/* pic two */}
+      <div className="flex flex-col pt-5 mx-auto">
+        <Image
+          className=""
+          src="/designBg.jpg"
+          alt="designBackground"
+          width={700}
+          height={200}
+          priority
+        />
+      </div>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("about.TxtTwo")}
+      </p>
+
+      {/* pic three */}
+      <div className="flex flex-col pt-5 mx-auto">
+        <Image
+          className=""
+          src="/designBg.jpg"
+          alt="designBackground"
+          width={900}
+          height={200}
+          priority
+        />
+      </div>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("about.people")}
+      </p>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("about.peopleTxt")}
+      </p>
+
+      {/* img foundres */}
+      <div className="flex flex-row pt-5 mx-auto justify-evenly">
+        <div className="flex flex-col pt-5 w-4/12">
           <Image
             className="basis-1/12"
             src="/designBg.jpg"
@@ -25,13 +74,12 @@ export default function About() {
             height={200}
             priority
           />
-        </div>
-          <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("about.Txt")}
+          <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin underline">
+            {t("about.founder")}
           </p>
-          
-          <div className="flex flex-col pt-5">
-        <Image
+        </div>
+        <div className="flex flex-col pt-5 w-4/12">
+          <Image
             className="basis-1/12"
             src="/designBg.jpg"
             alt="designBackground"
@@ -39,63 +87,25 @@ export default function About() {
             height={200}
             priority
           />
-        </div>
-          <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("about.TxtTwo")}
-          </p>
-          
-        <div className="flex flex-row pt-5">
-        <div className="flex flex-col pt-5">
-        <Image
-            className="basis-1/12"
-            src="/designBg.jpg"
-            alt="designBackground"
-            width={1200}
-            height={200}
-            priority
-          />
-          <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("about.people")}
+          <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin underline">
+            {t("about.founderTwo")}
           </p>
         </div>
-        <div className="flex flex-col pt-5">
-        <Image
-            className="basis-1/12"
-            src="/designBg.jpg"
-            alt="designBackground"
-            width={1200}
-            height={200}
-            priority
-          />
-          <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("about.peopleTxt")}
-          </p>
-        </div>
-        </div>
+      </div>
 
-        <div className="flex flex-col pt-5">
-        <Image
-            className="basis-1/12"
-            src="/designBg.jpg"
-            alt="designBackground"
-            width={1200}
-            height={200}
-            priority
-          />
-        </div>
-          <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("about.peopleTxtOne")}
-        </p>
-        
-        <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("home.peopleTxtTwo")}
-        </p>
+      {/* other members */}
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("about.otherMembers")}
+      </p>
 
-        <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("home.founder")}
-        </p>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("home.join")}
+      </p>
 
-        </Layout>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("home.backTop")}
+      </p>
+    </Layout>
   );
 }
 

@@ -1,12 +1,3 @@
-.description {
-  display: flex;
-  justify-content: space-between;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
 
 .grid {
   display: grid;
