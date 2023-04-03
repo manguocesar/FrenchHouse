@@ -159,27 +159,16 @@ export default function Home() {
                 </Link>
               </p>
             ))}
-          {projects
-            .sort((a, b) => 0.5 - Math.random())
-            .map((item, index) => (
-              <p className="p-2 cursor-pointer" key={index}>
-                <Link
-                  href={`/projects/${item.title}`}
-                  onMouseOver={() => {
-                    displayPicture();
-                  }}
-                  className={
-                    item.types.includes(keyword)
-                      ? "capitalize font-semibold text-lg hover:opacity-60"
-                      : "capitalize font-light text-md hover:opacity-60"
-                  }
-                >
-                  {item.title}
-                </Link>
-              </p>
-            ))}
         </div>
       </div>
+      <Image
+        className="my-4 mx-auto"
+        src="/customers.png"
+        alt="designBackground"
+        width={900}
+        height={400}
+        priority
+      />
     </Layout>
   );
 }

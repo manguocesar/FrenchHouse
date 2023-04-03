@@ -116,11 +116,11 @@ export default function About() {
       </p>
 
       <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("home.join")}
+        {t("about.join")}
       </p>
 
       <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("home.backTop")}
+        {t("about.backTop")}
       </p>
     </Layout>
   );
