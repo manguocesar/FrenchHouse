@@ -73,7 +73,7 @@ export default function Home() {
                       : "capitalize font-light text-md hover:opacity-60"
                   }
                 >
-                  {item.title.replaceAll("_", " ")}
+                  {item.title}
                 </Link>
               </p>
             ))}
@@ -92,7 +92,7 @@ export default function Home() {
                       : "capitalize font-light text-md hover:opacity-60"
                   }
                 >
-                  {item.title.replaceAll("_", " ")}
+                  {item.title}
                 </Link>
               </p>
             ))}
@@ -113,7 +113,7 @@ export default function Home() {
                       : "capitalize font-light text-md hover:opacity-60"
                   }
                 >
-                  {item.title.replaceAll("_", " ")}
+                  {item.title}
                 </Link>
               </p>
             ))}
@@ -136,7 +136,7 @@ export default function Home() {
                       : "capitalize font-light text-md hover:opacity-60"
                   }
                 >
-                  {item.title.replaceAll("_", " ")}
+                  {item.title}
                 </Link>
               </p>
             ))}
@@ -155,7 +155,7 @@ export default function Home() {
                       : "capitalize font-light text-md hover:opacity-60"
                   }
                 >
-                  {item.title.replaceAll("_", " ")}
+                  {item.title}
                 </Link>
               </p>
             ))}
@@ -174,7 +174,7 @@ export default function Home() {
                       : "capitalize font-light text-md hover:opacity-60"
                   }
                 >
-                  {item.title.replaceAll("_", " ")}
+                  {item.title}
                 </Link>
               </p>
             ))}
@@ -188,7 +188,6 @@ export async function getStaticProps({ locale }: any) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"]))
-      // Will be passed to the page component as props
     }
   };
 }

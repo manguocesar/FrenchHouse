@@ -28,7 +28,7 @@ export default function About() {
         <div className="flex flex-row mb-10 mx-auto">
           {dataAbout.map((item, index) => (
               <div key={index} className="flex flex-col justify-center items-center mx-4">
-                <p className="text-gray-500 font-semibold text-3xl">{item.number}</p> <p>-</p> <p className="text-gray-500 uppercase">{item.title}</p>
+                <p className="text-gray-500 font-semibold text-3xl">{item.number}</p> <p>-</p> <p className="text-gray-500 uppercase text-center">{item.title}</p>
               </div>
           ))}
         </div>
