@@ -10,95 +10,73 @@ import Layout from "@/components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
-function Contact() {
-  const headerTitles = ["/", "projects", "about", "news", "careers", "contact"];
-
-
-  const router = useRouter();
-
-  return (
-    <div className={styles.description}>
-      <Image
-        className="basis-1/12"
-        src="/aimarchitecture.png"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
-      <div className="flex items-center">
-        {headerTitles.map((item, key) => (
-          <Link key={key} href={item}>
-            <p
-              className={
-                router.route == "/"
-                  ? "uppercase px-8 font-semibold border-x text-xl hover:opacity-60"
-                  : "uppercase px-10 font-light border border-600 text-xs hover:opacity-60"
-              }
-            >
-              {item === "/" ? "Home" : item }
-            </p>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-}
-function Languages() {
-  const { t } = useTranslation("common");
-
-  const router = useRouter();
-
-  return (
-    <div className="flex justify-end">
-      {router.locale !== "fr" && (
-        <Link href="/another">
-          <p className="border p-3 m-2 bg-white">{t("header.fr")}</p>
-        </Link>
-      )}
-      {router.locale !== "en" && (
-        <Link href="/another" locale="en">
-          <p className="border p-3 m-2 bg-white">{t("header.en")}</p>
-        </Link>
-      )}
-      {router.locale !== "ch" && (
-        <Link href="/another" locale="ch">
-          <p className="border p-3 m-2 bg-white">{t("header.ch")}</p>
-        </Link>
-      )}
-    </div>
-  );
-}
-
-export default function News() {
+export default function Contact() {
   const { t } = useTranslation("common");
 
   return (
     <Layout>
-        <div className="flex flex-col pt-5">
-          <p className="text-3xl font-medium pt-3">{t("home.weDesign")}</p>
-          <p className="py-3 1 text-7xl font-extrabold">
-            {t("home.theathersForLife")}
-          </p>
-          <Image
-            className="basis-1/12"
-            src="/designBg.jpg"
-            alt="designBackground"
-            width={1200}
-            height={200}
-            priority
-          />
-        </div>
-        <div className="flex flex-col p-3">
-          <p className="py-3 text-xl w-6/12 font-thin uppercase">
-            {t("home.passionateCollective")}
-          </p>
-          <p className="text-lg w-8/12 leading-8 font-thin text-justify">
-            {t("home.passionateCollectiveTxt")}{" "}
-            {t("home.passionateCollectiveTxt")}
-          </p>
-        </div>
-        </Layout>
+    
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.intro")}
+      </p>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.email")}
+      </p>
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.emailAddress")}
+      </p>
+
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.browse")}
+      </p>
+
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.positionTitleOne")}
+      </p>
+
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.positionDescriptionOne")}
+      </p>
+      
+      
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.positionTitleTwo")}
+      </p>
+
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.positionDescriptionTwo")}
+      </p>
+      
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.moreInfo")}
+      </p>
+
+      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+        {t("careers.linkedin")}
+      </p>
+
+      <div className="flex flex-col pt-5 mx-auto">
+        <Image
+          className=""
+          src="/cesarPortfolio.png"
+          alt="designBackground"
+          width={300}
+          height={400}
+          priority
+        />
+      </div>
+      <div className="flex flex-col pt-5 mx-auto">
+        <Image
+          className=""
+          src="/map.jpg"
+          alt="designBackground"
+          width={900}
+          height={500}
+          priority
+        />
+      </div>
+
+    </Layout>
   );
 }
 
