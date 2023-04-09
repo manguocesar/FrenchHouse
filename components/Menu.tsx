@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
 function Menu() {
-  const headerTitles = ["", "projects", "about", "news", "careers", "contact"];
+  const headerTitles = ["/", "projects", "about", "news", "careers", "contact"];
   const router = useRouter();
 
   return (
