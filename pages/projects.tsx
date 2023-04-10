@@ -27,7 +27,7 @@ function ProjectList({ setKeyword, display, keyword }: Project) {
   ];
 
   return (
-    <div className="w-3/12">
+    <div className="w-3/12 mb-14">
       {headerTitles.map((item, index) => (
         <p
           key={index}
@@ -74,30 +74,12 @@ export default function Home() {
           keyword={keyword}
           display={display}
         />
-        <div className="w-4/12">
+          
+        <div className="w-9/12 columns-3">
           {projects.map((item, index) => (
-            <p className="p-2 cursor-pointer" key={index}>
+            <p className="p-2 cursor-pointer my-4" key={index}>
               <Link
                 href={`/projects/${item.name}`}
-                onMouseOver={() => {
-                  displayPicture(item.name);
-                }}
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize font-semibold text-lg hover:opacity-60"
-                    : "capitalize font-light text-md hover:opacity-60"
-                }
-              >
-                {item.title}
-              </Link>
-            </p>
-          ))}
-        </div>
-        <div>
-          {projects.map((item, index) => (
-            <p className="p-2 cursor-pointer" key={index}>
-              <Link
-                href={`/projects/${item.title}`}
                 onMouseOver={() => {
                   displayPicture(item.name);
                 }}

@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Menu() {
-  const headerTitles = ["/", "projects", "about", "news",
-    // "careers",
+  const headerTitles = ["/", "projects", "about", 
+    // "news", "careers",
     "contact"];
   const router = useRouter();
 

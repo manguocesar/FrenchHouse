@@ -1,31 +1,9 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Layout from "@/components/Layout";
+import Intro from "@/components/Intro";
 
-const inter = Inter({ subsets: ["latin"] });
-const intro = ["office", "food", "hospitality", "industrial", "retail"];
-
-function Intro() {
-  return (
-    <div className="flex justify-evenly">
-      {intro.map((item, index) => (
-        <div className="justify-center my-5" key={index}>
-          <p className="text-center capitalize text-2xl">{item}</p>
-          <Image
-            className="w-40 h-56 my-5 rounded-lg"
-            src={`/intro/${item}.png`}
-            alt="secondaryPic"
-            width={150}
-            height={150}
-            priority
-          />
-        </div>
-      ))}
-    </div>
-  );
-}
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -42,7 +20,6 @@ export default function Home() {
         <p className="py-3 1 text-3xl font-extralight font-sans">
           {t("home.activity")}
         </p>
-
         <Intro />
       </div>
       <div className="flex flex-col p-3">
