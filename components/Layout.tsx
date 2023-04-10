@@ -31,7 +31,7 @@ function Layout({ children }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col p-10 bg-gray-50">
-        <Languages />
+        {!router.asPath.includes("/projects/") && <Languages />}
         <Menu />
         {children}
         <Social />
