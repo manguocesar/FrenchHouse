@@ -7,6 +7,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
+import Founders from "@/components/Founders";
+import FHContact from "@/components/FHContact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,67 +17,16 @@ export default function Contact() {
 
   return (
     <Layout>
-    
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.intro")}
-      </p>
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.email")}
-      </p>
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.emailAddress")}
-      </p>
-
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.browse")}
-      </p>
-
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.positionTitleOne")}
-      </p>
-
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.positionDescriptionOne")}
-      </p>
-      
-      
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.positionTitleTwo")}
-      </p>
-
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.positionDescriptionTwo")}
-      </p>
-      
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.moreInfo")}
-      </p>
-
-      <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-        {t("careers.linkedin")}
-      </p>
-
-      <div className="flex flex-col pt-5 mx-auto">
-        <Image
-          className=""
-          src="/cesarPortfolio.png"
-          alt="designBackground"
-          width={300}
-          height={400}
-          priority
-        />
-      </div>
-      <div className="flex flex-col pt-5 mx-auto">
-        <Image
-          className=""
-          src="/map.jpg"
-          alt="designBackground"
-          width={900}
-          height={500}
-          priority
-        />
-      </div>
-
+      <Image
+        className="mx-auto w-72"
+        src="/iconText.png"
+        alt="designBackground"
+        width={750}
+        height={400}
+        priority
+      />
+      <FHContact />
+      <Founders />
     </Layout>
   );
 }
