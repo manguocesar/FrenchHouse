@@ -11,7 +11,7 @@ function Intro() {
   return (
     <div className="flex justify-evenly">
       {intro.map((item, index) => (
-        <div className="justify-center" key={index}>
+        <div className="justify-center my-5" key={index}>
           <p className="text-center capitalize text-2xl">{item}</p>
           <Image
             className="w-40 h-56 my-5 rounded-lg"

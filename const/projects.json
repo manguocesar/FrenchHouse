@@ -80,6 +80,22 @@
     "surface": "700"
   },
   {
+    "name": "bartra",
+    "title": "BARTRA",
+    "types": ["offices"],
+    "buildings": "OFFICE + SHOWROOM",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "JingAn, Shanghai, China ",
+    "surface": "300"
+  },
+  {
     "name": "tsubo",
     "title": "TSUBO",
     "types": ["offices", "retail", "food & beverage"],
@@ -92,5 +108,20 @@
     ],
     "location": "Shanghai, China ",
     "surface": "350"
+  },
+  {
+    "name": "pierrevacances",
+    "title": "PIERRE & VACANCES",
+    "types": ["offices"],
+    "buildings": "OFFICE + SHOWROOM",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "1000"
   }
 ]

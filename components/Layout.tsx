@@ -10,7 +10,7 @@ import React from "react";
 
 function Social() {
   return (
-    <div className="flex mx-auto my-2">
+    <div className="flex mx-auto my-5">
       <FontAwesomeIcon className="cursor-pointer mx-4 w-8"  icon={faInstagram} />
       <FontAwesomeIcon className="cursor-pointer mx-4 w-8"  icon={faLinkedin} />
       <FontAwesomeIcon className="cursor-pointer mx-4 w-8"  icon={faFacebook} />
