@@ -1,4 +1,5 @@
 [{
+    "name": "hteg",
     "title": "HTEG (For Versace)",
     "types": ["offices", "hospitality", "industrial"],
     "buildings": "WAREHOUSE + OFFICE BUILDING+ 6 VILLAS + LANDSCAPE",
@@ -7,6 +8,7 @@
     "surface": "5,000"
   },
   {
+    "name": "ruichi",
     "title": "RUICHI",
     "types": ["offices", "hospitality"],
     "buildings": "OFFICE + R&D CENTER + TRAINING CENTER + HOTEL BUILDING",
@@ -22,6 +24,7 @@
     "surface": "85,000"
   },
   {
+    "name": "prd",
     "title": "PRD (For LVMH Perfumes & Cosmetics)",
     "types": ["offices", "hospitality"],
     "buildings": "OFFICE + WAREHOUSES",
@@ -35,6 +38,7 @@
     "surface": "115,000"
   },
   {
+    "name": "erlab",
     "title": "ERLAB",
     "types": ["offices", "hospitality"],
     "buildings": "OFFICE +SHOWROOM + FACTORY",
@@ -48,6 +52,7 @@
     "surface": "6,500"
   },
   {
+    "name": "fabernovel",
     "title": "FABERNOVEL EY",
     "types": ["offices"],
     "buildings": "OFFICES + PANTRY + EVENT AREA",
@@ -61,6 +66,7 @@
     "surface": "1,200"
   },
   {
+    "name": "cozysteps",
     "title": "COZY STEPS",
     "types": ["offices", "retail"],
     "buildings": "OFFICES + RETAIL",
@@ -74,6 +80,7 @@
     "surface": "700"
   },
   {
+    "name": "tsubo",
     "title": "TSUBO",
     "types": ["offices", "retail", "food & beverage"],
     "buildings": "FLAGSHIP STORE OFFICE + RETAIL + F&B",

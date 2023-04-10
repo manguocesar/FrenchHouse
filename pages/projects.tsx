@@ -57,32 +57,13 @@ export default function Home() {
           )}
         </div>
 
-        <div>
+        <div className="w-4/12">
           {projects
             .sort((a, b) => 0.5 - Math.random())
             .map((item, index) => (
               <p className="p-2 cursor-pointer" key={index}>
                 <Link
-                  href={`/projects/${item.title}`}
-                  onMouseOver={() => {
-                    displayPicture();
-                  }}
-                  className={
-                    item.types.includes(keyword)
-                      ? "capitalize font-semibold text-lg hover:opacity-60"
-                      : "capitalize font-light text-md hover:opacity-60"
-                  }
-                >
-                  {item.title}
-                </Link>
-              </p>
-            ))}
-          {projects
-            .sort((a, b) => 0.5 - Math.random())
-            .map((item, index) => (
-              <p className="p-2 cursor-pointer" key={index}>
-                <Link
-                  href={`/projects/${item.title}`}
+                  href={`/projects/${item.name}`}
                   onMouseOver={() => {
                     displayPicture();
                   }}
@@ -119,47 +100,6 @@ export default function Home() {
             ))}
         </div>
 
-        {/* fourth col */}
-        <div>
-          {projects
-            .sort((a, b) => 0.5 - Math.random())
-            .map((item, index) => (
-              <p className="p-2 cursor-pointer" key={index}>
-                <Link
-                  href={`/projects/${item.title}`}
-                  onMouseOver={() => {
-                    displayPicture();
-                  }}
-                  className={
-                    item.types.includes(keyword)
-                      ? "capitalize font-semibold text-lg hover:opacity-60"
-                      : "capitalize font-light text-md hover:opacity-60"
-                  }
-                >
-                  {item.title}
-                </Link>
-              </p>
-            ))}
-          {projects
-            .sort((a, b) => 0.5 - Math.random())
-            .map((item, index) => (
-              <p className="p-2 cursor-pointer" key={index}>
-                <Link
-                  href={`/projects/${item.title}`}
-                  onMouseOver={() => {
-                    displayPicture();
-                  }}
-                  className={
-                    item.types.includes(keyword)
-                      ? "capitalize font-semibold text-lg hover:opacity-60"
-                      : "capitalize font-light text-md hover:opacity-60"
-                  }
-                >
-                  {item.title}
-                </Link>
-              </p>
-            ))}
-        </div>
       </div>
       <Image
         className="my-4 mx-auto"

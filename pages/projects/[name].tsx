@@ -2,30 +2,95 @@ import { useRouter } from "next/router";
 import projects from "../../const/projects.json";
 import Layout from "@/components/Layout";
 import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Post = () => {
   const router = useRouter();
   const { name } = router.query;
 
-  const object = projects.find((item) => item.title === name);
+  const object = projects.find((item) => item.name === name);
 
   return (
     <Layout>
       <div className="flex flex-col items-center mb-5">
-        <Image
-          className="basis-1/12"
-          src="/frenchHouse.png"
-          alt="Next.js Logo"
-          width={140}
-          height={40}
-          priority
-        />
-        <p className="text-xl font-semibold">{object?.title}</p>
-        <div>{object && <Types types={object.types} />}</div>
-        <p>{object?.buildings}</p>
-        <div>{object && <Types types={object.services} />}</div>
-        <p>{object?.location}</p>
-        <p>{object?.surface}</p>
+        <p className="text-5xl font-bold">{object?.title}</p>
+        <p className="text-3xl font-medium">{object?.buildings}</p>
+        <div className="flex items-center">
+          <Image
+            className="my-5 rounded-lg"
+            src={`/project/${name}.png`}
+            alt="mainPicture"
+            width={800}
+            height={100}
+            priority
+          />
+          <div className="flex flex-col m-2">
+            <div className="text-2xl font-semibold my-2">
+              {object && <Types types={object.types} />}
+            </div>
+            <div className="text-xl font-semibold my-2">
+              {object && <Types types={object.services} />}
+            </div>
+            <div className="flex items-center my-2">
+              <Image
+                className="w-8 hover:scale-105"
+                src={`/location.png`}
+                alt="location"
+                width={100}
+                height={100}
+                priority
+              />
+              <p className="text-xl font-semibold my-2">{object?.location}</p>
+            </div>
+            <div className="flex items-center my-2">
+              <Image
+                className="w-10 hover:scale-105"
+                src={`/surface.png`}
+                alt="surface"
+                width={100}
+                height={100}
+                priority
+              />
+              <p className="italic text-xl font-semibold">
+                {object?.surface} m2
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex w-full justify-around">
+          <Image
+            className="my-5 rounded-lg hover:scale-110"
+            src={`/project/${name}2.png`}
+            alt="secondaryPic"
+            width={300}
+            height={100}
+            priority
+          />
+          <Image
+            className="my-5 rounded-lg hover:scale-110"
+            src={`/project/${name}3.png`}
+            alt="secondaryPic"
+            width={300}
+            height={100}
+            priority
+          />
+          <Image
+            className="my-5 rounded-lg hover:scale-110"
+            src={`/project/${name}4.png`}
+            alt="secondaryPic"
+            width={300}
+            height={100}
+            priority
+          />
+          <Image
+            className="my-5 rounded-lg hover:scale-110"
+            src={`/project/${name}5.png`}
+            alt="secondaryPic"
+            width={300}
+            height={100}
+            priority
+          />
+        </div>
       </div>
     </Layout>
   );
@@ -34,8 +99,11 @@ const Post = () => {
 function Types({ types }: any) {
   return (
     <div>
-      {types.map((item:string, index:number) => (
-        <span className="capitalize m-1" key={index}>{item}</span>
+      {types.map((item: string, index: number) => (
+        <span className="capitalize mr-1" key={index}>
+          {item}
+          {types[index + 1] && ","}
+        </span>
       ))}
     </div>
   );
