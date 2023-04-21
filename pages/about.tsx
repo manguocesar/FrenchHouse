@@ -45,29 +45,13 @@ export default function About() {
           {t("home.whoWeAre")}
         </p>
         <DataAbout />
-        <p className="py-3 text-xl mx-auto text-center w-8/12 font-thin">
-          {t("home.whoWeAreTxt")}
-        </p>
-        <Intro />
+        <Image className="shadow-lg"
+          src="/map.png"
+          alt="map"
+          width={800}
+          height={300}
+          priority />
       </div>
-
-      {/* pic three */}
-      <div className="flex flex-col pt-5 mx-auto">
-        <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
-          {t("about.people")}
-        </p>
-        <Image
-          className=""
-          src="/romainXiao.png"
-          alt="designBackground"
-          width={500}
-          height={200}
-          priority
-        />
-      </div>
-
-      <Founders />
-      <FHContact />
     </Layout>
   );
 }

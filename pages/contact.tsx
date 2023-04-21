@@ -25,8 +25,38 @@ export default function Contact() {
         height={400}
         priority
       />
-      <FHContact />
+      <div className="flex flex-col pt-5 mx-auto">
+        <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
+          {t("about.people")}
+        </p>
+        <Image
+          className=""
+          src="/romainXiao.png"
+          alt="designBackground"
+          width={500}
+          height={200}
+          priority
+        />
+      </div>
+
       <Founders />
+      <FHContact />
+      <Image
+        className="flex flex-col mx-auto"
+        src="/officeSh.jpg"
+        alt="officeSh"
+        width={500}
+        height={200}
+        priority
+      />
+      <Image
+        className="flex flex-col mx-auto"
+        src="/mapSh.jpg"
+        alt="mapSh"
+        width={500}
+        height={200}
+        priority
+      />
     </Layout>
   );
 }
