@@ -80,6 +80,51 @@
     "surface": "700"
   },
   {
+    "name": "patekphilippe",
+    "title": "Patek Philippe",
+    "types": ["offices" ],
+    "buildings": "OFFICE + PANTRY + TERRACE",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "400"
+  },
+  {
+    "name": "junling",
+    "title": "JUNLING",
+    "types": ["retail" ],
+    "buildings": "HUB HOUSE - Multi-use Space",
+    "services": [
+      "Façade & Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Yancheng Jiangsu, China",
+    "surface": "1000"
+  },
+  {
+    "name": "prd",
+    "title": "PRD",
+    "types": ["retail" ],
+    "buildings": "HUB HOUSE - Multi-use Space",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Cost management"
+    ],
+    "location": "Yancheng Jiangsu, China",
+    "surface": "1000"
+  },
+  {
     "name": "bartra",
     "title": "BARTRA",
     "types": ["offices"],
@@ -123,5 +168,624 @@
     ],
     "location": "Shanghai, China ",
     "surface": "1000"
+  },
+  {
+    "name": "melchers",
+    "title": "MELCHERS",
+    "types": ["offices"],
+    "buildings": "OFFICE + PANTRY",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "500"
+  },
+  {
+    "name": "austrianconsulate",
+    "title": "AUSTRIAN CONSULATE",
+    "types": ["offices"],
+    "buildings": "OFFICE",
+    "services": [
+      "General contractor",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "200"
+  },
+  {
+    "name": "axa",
+    "title": "AXA IMMOBILIER",
+    "types": ["offices", "food & beverage"],
+    "buildings": "Office + F&B",
+    "services": [
+      "MEP drawings",
+      "Landscape",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "200"
+  },
+  {
+    "name": "for",
+    "title": "FOR",
+    "types": ["retail"],
+    "buildings": "CREATIVE CENTER",
+    "services": [
+      "Art Consultant",
+      "Design review"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "60,000"
+  },
+  {
+    "name": "melchers",
+    "title": "MELCHERS",
+    "types": ["retail"],
+    "buildings": "WATCHES SERVICE CENTER",
+    "services": [
+      "Façade & Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Cost management",
+      "Construction supervision"
+    ],
+    "location": "Shanghai, China",
+    "surface": "100"
+  },
+  {
+    "name": "tsuboretail",
+    "title": "TSUBO RETAIL",
+    "types": ["retail"],
+    "buildings": "PLAZA 66 RETAIL",
+    "services": [
+      "Cost management",
+      "Project Management",
+      "Construction supervision"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "150"
+  },
+  {
+    "name": "tsubosusas",
+    "title": "TSUBO x SUSAS",
+    "types": ["retail"],
+    "buildings": "POP-UP RETAIL",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Cost management",
+      "Project Management",
+      "Construction supervision"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "150"
+  },
+  {
+    "name": "falke",
+    "title": "FALKE",
+    "types": ["retail"],
+    "buildings": "RETAIL",
+    "services": [
+      "Interior Design & Facade",
+      "MEP drawings",
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "IFC Mall, Hong Kong",
+    "surface": "150"
+  },
+  {
+    "name": "galerieslafayette",
+    "title": "GALERIES LAFAYETTE",
+    "types": ["retail"],
+    "buildings": "RETAIL",
+    "services": [
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Guideline"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "25,000"
+  },{
+    "name": "patekphilippevip",
+    "title": "PATEK PHILIPPE VIP",
+    "types": ["retail"],
+    "buildings": "VIP AREA & CUSTOMER SERVICE CENTER",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "500"
+  },{
+    "name": "patekphilippevipbeijing",
+    "title": "VIP AREA & CUSTOMER SERVICE CENTER",
+    "types": ["retail"],
+    "buildings": "VIP AREA & CUSTOMER SERVICE CENTER",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Beijing, China ",
+    "surface": "450"
+  },
+  {
+    "name": "wgss",
+    "title": "WGSS",
+    "types": ["retail"],
+    "buildings": "SHOWROOM",
+    "services": [
+      "Facade & Interior Design",
+      "MEP drawings",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China",
+    "surface": "200"
+  },
+  {
+    "name": "saintgobain",
+    "title": "SAINT - GOBAIN",
+    "types": ["retail"],
+    "buildings": "SHOWROOM",
+    "services": [
+      "Facade & Interior Design",
+      "MEP drawings",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China",
+    "surface": "70"
+  },
+  {
+    "name": "templeoflight",
+    "title": "TEMPLE OF LIGHT",
+    "types": ["retail", "exhibition"],
+    "buildings": "IMMERSIVE ART EXHIBITIONS",
+    "services": [
+      "Facade & Interior Design",
+      "Landscape",
+      "Tendering"
+    ],
+    "location": "Shanghai, China",
+    "surface": "5,500"
+  },
+  {
+    "name": "templeoflightmuseum",
+    "title": "TEMPLE OF LIGHT IMMERSIVE MUSEUM",
+    "types": ["retail", "exhibition"],
+    "buildings": "IMMERSIVE ART EXHIBITIONS",
+    "services": [
+      "Facade & Interior Design"
+    ],
+    "location": "Shanghai, China",
+    "surface": "900"
+  },
+  {
+    "name": "puydufou",
+    "title": "PUY DU FOU",
+    "types": [""],
+    "buildings": "THEME PARK",
+    "services": [
+      "Due diligence"
+    ],
+    "location": "Everbright Convention and Exhibition Center, Shanghai",
+    "surface": "40,000"
+  },
+  {
+    "name": "suwzhouromance",
+    "title": "SUZHOU ROMANCE",
+    "types": ["food & beverage"],
+    "buildings": "Chinese Restaurant",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Suzhou, China",
+    "surface": "450"
+  },
+  {
+    "name": "moofin",
+    "title": "MOOFIN",
+    "types": ["food & beverage"],
+    "buildings": "Bakery",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "150"
+  },
+  {
+    "name": "panyu504",
+    "title": "PANYU 504",
+    "types": ["food & beverage"],
+    "buildings": "Bakery",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "300"
+  },
+  {
+    "name": "justpocket",
+    "title": "JUST POCKET",
+    "types": ["food & beverage"],
+    "buildings": "Bakery",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "100"
+  },
+  {
+    "name": "bambino",
+    "title": "BAMBINO",
+    "types": ["food & beverage"],
+    "buildings": "Restaurant & Bar",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "150"
+  },
+  {
+    "name": "valueretail",
+    "title": "Value Retail",
+    "types": ["food & beverage"],
+    "buildings": "Outdoor space for F&B Areas",
+    "services": [
+      "Interior Design",
+      "Landscape",
+      "Project Management",
+      "Construction supervision",
+      "MEP drawings"
+    ],
+    "location": "Shanghai, China ",
+    "surface": "4,000"
+  },
+  {
+    "name": "henanprosper",
+    "title": "HENAN PROSPER",
+    "types": ["food & beverage"],
+    "buildings": "Restaurant (Buffet, Bar, Yakitori, BBQ, Private Room)",
+    "services": [
+      "Interior Design",
+      "Tendering",
+      "Project Management",
+      "Construction supervision",
+      "MEP drawings"
+    ],
+    "location": "Zhengzhou，Henan ",
+    "surface": "1,000"
+  },
+  {
+    "name": "conniehe",
+    "title": "CONNIEHÉ",
+    "types": ["food & beverage"],
+    "buildings": "CAKE SHOP & SAKE BAR",
+    "services": [
+      "Facade & Interior Design",
+      "Cost management",
+      "Project Management",
+      "Construction supervision",
+      "MEP drawings"
+    ],
+    "location": "Shanghai",
+    "surface": "150"
+  },
+  {
+    "name": "juke",
+    "title": "JUKE",
+    "types": ["food & beverage"],
+    "buildings": "",
+    "services": [
+      "Interior Design",
+      "Cost management",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision"
+    ],
+    "location": "Shanghai",
+    "surface": "80"
+  },
+  {
+    "name": "juke",
+    "title": "JUKE",
+    "types": ["food & beverage"],
+    "buildings": "",
+    "services": [
+      "Interior Design",
+      "Cost management",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision"
+    ],
+    "location": "Shanghai",
+    "surface": "80"
+  },
+  {
+    "name": "moofinbakery",
+    "title": "MOOFIN Bakery",
+    "types": ["food & beverage"],
+    "buildings": "BAKERY & COFFEE",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "The Roof, Xintiandi, Shanghai",
+    "surface": "180"
+  },
+  {
+    "name": "qmex",
+    "title": "QMEX SOLANA",
+    "types": ["food & beverage"],
+    "buildings": "BAR & GRILL",
+    "services": [
+      "Facade & Interior Design",
+      "MEP drawings",
+      "Tendering",
+      "Project Management",
+      "Construction supervision",
+      "Cost management",
+      "Guideline"
+    ],
+    "location": "Chaoyang District, Beijing",
+    "surface": "600"
+  },
+  {
+    "name": "poz",
+    "title": "POZ",
+    "types": ["food & beverage"],
+    "buildings": "",
+    "services": [
+      "Facade & Interior Design"
+    ],
+    "location": "Fumin Lu, Shanghai",
+    "surface": "180"
+  },
+  {
+    "name": "grandganko",
+    "title": "GRAND GANKO",
+    "types": ["food & beverage"],
+    "buildings": "YAKITORI & WHISKY BAR",
+    "services": [
+      "Facade & Interior Design",
+      "Visual identity",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Xintiandi, Shanghai",
+    "surface": "200"
+  },
+  {
+    "name": "painchaud",
+    "title": "Pain Chaud",
+    "types": ["food & beverage"],
+    "buildings": "BAKERY & COFFEE",
+    "services": [
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Xintiandi, Shanghai",
+    "surface": "200"
+  },
+  {
+    "name": "dailytot",
+    "title": "DAILY TOT",
+    "types": ["food & beverage"],
+    "buildings": "RUM BAR",
+    "services": [
+      "Interior Design",
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Hollywood Road, Hong Kong",
+    "surface": "150"
+  },
+  {
+    "name": "luneurs",
+    "title": "LUNEURS",
+    "types": ["food & beverage"],
+    "buildings": "BRUNCH & BAKERY",
+    "services": [
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Huashan Lu, Shanghai",
+    "surface": "200"
+  },
+  {
+    "name": "yellowkorner",
+    "title": "YELLOW KORNER",
+    "types": ["retail"],
+    "buildings": "PHOTOGRAPHY . ART . LIMITED EDITION",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Taikoo Hui, Shanghai",
+    "surface": "280"
+  },
+  {
+    "name": "carreaudutemple",
+    "title": "CARREAU DU TEMPLE",
+    "types": [""],
+    "buildings": "Multi-use space",
+    "services": [
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Paris, X, France",
+    "surface": "1,800"
+  },
+  {
+    "name": "sunpark",
+    "title": "SUN PARK",
+    "types": ["hospitality","food & beverage"],
+    "buildings": "THEME PARK",
+    "services": [
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Jiuhua, China",
+    "surface": "50,000"
+  },
+  {
+    "name": "khankhujirt",
+    "title": "KHAN KHUJIRT",
+    "types": ["hospitality","food & beverage"],
+    "buildings": "SPA & WELLNESS RESORT",
+    "services": [
+      "Landscape",
+      "Interior Design",
+      "MEP drawings",
+      "Project Management",
+      "Tendering",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Khujirt, Mongolia",
+    "surface": "14,500"
+  },
+  {
+    "name": "suyuvillage",
+    "title": "SUYU VILLAGE",
+    "types": ["hospitality"],
+    "buildings": "CONVERT FARMER HOUSE TO HOTEL ",
+    "services": [
+      "Interior Design",
+      "Architecture",
+      "Landscape"
+    ],
+    "location": "Shanghai",
+    "surface": "600"
+  },
+  {
+    "name": "museumofman",
+    "title": "MUSEUM OF MAN",
+    "types": ["exhibition"],
+    "buildings": "",
+    "services": [
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Paris XVI, France",
+    "surface": "10,000"
+  },
+  {
+    "name": "picassomuseum",
+    "title": "PICASSO MUSEUM",
+    "types": ["exhibition"],
+    "buildings": "",
+    "services": [
+      "Economist of construction",
+      "Quality control"
+    ],
+    "location": "Paris III, France",
+    "surface": "2,000"
+  },
+  {
+    "name": "palaisroyal",
+    "title": "PALAIS ROYAL",
+    "types": ["exhibition"],
+    "buildings": "",
+    "services": [
+      "Economist of construction",
+      "Quality control"
+    ],
+    "location": "Paris I, France",
+    "surface": "500"
+  },
+  {
+    "name": "privateresidences",
+    "title": "PRIVATE RESIDENCES",
+    "types": ["hospitality"],
+    "buildings": "30 APPARTMENTS + 1 FLOOR PARKING",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "General contractor",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Paris, France",
+    "surface": "2,500"
+  },
+  {
+    "name": "privateresidencesparis",
+    "title": "PRIVATE RESIDENCES Paris",
+    "types": ["hospitality"],
+    "buildings": "75 APPARTMENTS + 2 FLOORS PARKING",
+    "services": [
+      "Interior Design",
+      "MEP drawings",
+      "General contractor",
+      "Project Management",
+      "Construction supervision",
+      "Cost management"
+    ],
+    "location": "Paris, XIV, France",
+    "surface": "5,000"
   }
 ]

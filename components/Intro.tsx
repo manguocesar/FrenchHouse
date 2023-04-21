@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Intro() {
     
-const intro = ["office", "food", "hospitality", "industrial", "retail"];
+const intro = ["office", "F&B", "hospitality", "industrial", "retail", "exhibition"];
     
     return (
       <div className="flex w-full justify-evenly">

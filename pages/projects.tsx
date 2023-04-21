@@ -43,7 +43,7 @@ function ProjectList({ setKeyword, display, keyword }: Project) {
           {item}
         </p>
       ))}
-      {display && (
+      {/* {display && (
         <Image
           className="absolute w-30 h-24"
           src={`/project/${display}.png`}
@@ -52,7 +52,7 @@ function ProjectList({ setKeyword, display, keyword }: Project) {
           height={200}
           priority
         />
-      )}
+      )} */}
     </div>
   );
 }
@@ -77,7 +77,7 @@ export default function Home() {
           
         <div className="w-9/12 columns-3">
           {projects.map((item, index) => (
-            <p className="p-2 cursor-pointer my-4" key={index}>
+            <p className="p-2 cursor-pointer mb-4" key={index}>
               <Link
                 href={`/projects/${item.name}`}
                 onMouseOver={() => {

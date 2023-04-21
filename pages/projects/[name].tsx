@@ -25,7 +25,7 @@ const Post = () => {
             className="my-5 rounded-lg"
             src={`/project/${name}.png`}
             alt="mainPicture"
-            width={800}
+            width={700}
             height={100}
             priority
           />
