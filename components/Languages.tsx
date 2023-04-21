@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 function Languages() {
   const { t, i18n } = useTranslation("common");
@@ -14,34 +15,43 @@ function Languages() {
   return (
     <div className="flex justify-end">
       {i18n.language !== "fr" && (
-        <p
+        <Image
+        src="/flags/fr.svg"
+        alt="frFlag"
+        width={50}
+        height={50}
+        priority
           onClick={() => {
             changeLang("fr");
           }}
-          className="border p-3 m-2 bg-white cursor-pointer hover:opacity-80"
-        >
-          {t("header.fr")}
-        </p>
+          className="cursor-pointer hover:opacity-80"
+        />
       )}
       {i18n.language !== "en" && (
-        <p
+        <Image
+        src="/flags/en.svg"
+        alt="enFlag"
+        width={50}
+        height={50}
+        priority
           onClick={() => {
             changeLang("en");
           }}
-          className="border p-3 m-2 bg-white cursor-pointer hover:opacity-80"
-        >
-          {t("header.en")}
-        </p>
+          className="cursor-pointer hover:opacity-80"
+        />
       )}
       {i18n.language !== "ch" && (
-        <p
+        <Image
+        src="/flags/ch.svg"
+        alt="chFlag"
+        width={50}
+        height={50}
+        priority
           onClick={() => {
             changeLang("ch");
           }}
-          className="border p-3 m-2 bg-white cursor-pointer hover:opacity-80"
-        >
-          {t("header.ch")}
-        </p>
+          className="cursor-pointer hover:opacity-80"
+        />
       )}
     </div>
   );
