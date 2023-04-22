@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
 import { useState } from "react";
 import Image from "next/image";

@@ -6,8 +6,6 @@ import Image from "next/image";
 function Languages() {
   const { t, i18n } = useTranslation("common");
 
-  const router = useRouter();
-
   const changeLang = (lang: string) => {
     i18n.changeLanguage(lang);
   };

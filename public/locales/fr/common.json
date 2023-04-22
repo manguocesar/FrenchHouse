@@ -2,7 +2,11 @@
   "header": {
     "fr": "Français",
     "en": "Anglais",
-    "ch": "Chinois"
+    "ch": "Chinois",
+    "home": "accueil",
+    "projects": "projets",
+    "about": "a propos",
+    "contact": "contact"
   },
   "home": {
     "customDesign": "Custom Design",

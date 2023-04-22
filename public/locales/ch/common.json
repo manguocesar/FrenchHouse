@@ -2,7 +2,11 @@
   "header": {
     "fr": "法语",
     "en": "英语",
-    "ch": "中文"
+    "ch": "中文",
+    "home": "首页",
+    "projects": "项目",
+    "about": "关于",
+    "contact": "联系"
   },
   "home": {
     "customDesign": "Custom Design",
@@ -22,5 +26,5 @@
     "founderTwo": "Xiao WULING",
     "otherMembers": "WE TURN YOUR VISION INTO REALITY"
   },
-  "allRights":  "FrenchHouse Copyright - All rights reserved. Privacy & Terms"
+  "allRights": "FrenchHouse Copyright - All rights reserved. Privacy & Terms"
 }
