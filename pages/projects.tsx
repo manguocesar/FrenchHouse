@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
@@ -6,8 +5,6 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 import Image from "next/image";
 import projects from "../const/projects.json";
-
-const inter = Inter({ subsets: ["latin"] });
 
 interface Project {
   setKeyword: React.Dispatch<React.SetStateAction<string>>;
@@ -58,14 +55,21 @@ function ProjectList({ setKeyword, display, keyword }: Project) {
 }
 
 export default function Home() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const [keyword, setKeyword] = useState("");
   const [display, setDisplay] = useState("");
 
   const displayPicture = (name: string) => setDisplay(name);
 
+  const headerTitles = [
+    { url: "/", title: t("header.home") },
+    { url: "/projects", title: t("header.projects") },
+    { url: "/about", title: t("header.about") },
+    { url: "/contact", title: t("header.contact") }
+  ];
+
   return (
-    <Layout>
+    <Layout headerTitles={headerTitles}>
       <div className="flex mb-5">
         {/* left list */}
 
@@ -74,7 +78,7 @@ export default function Home() {
           keyword={keyword}
           display={display}
         />
-          
+
         <div className="w-9/12 columns-3">
           {projects.map((item, index) => (
             <p className="p-2 cursor-pointer mb-4" key={index}>
@@ -101,7 +105,6 @@ export default function Home() {
         alt="designBackground"
         width={900}
         height={400}
-        priority
       />
       <p className="pt-5 text-lg text-center font-thin font-sans">
         {t("allRights")}
@@ -113,7 +116,11 @@ export default function Home() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"]))
+      ...(await serverSideTranslations(locale, ["common"], null, [
+        "en",
+        "ch",
+        "fr"
+      ]))
     }
   };
 }

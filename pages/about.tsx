@@ -1,13 +1,7 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Layout from "@/components/Layout";
-import Intro from "@/components/Intro";
-import Founders from "@/components/Founders";
-import FHContact from "@/components/FHContact";
-
-const inter = Inter({ subsets: ["latin"] });
 
 function DataAbout() {
   const dataAbout = [
@@ -36,10 +30,17 @@ function DataAbout() {
 }
 
 export default function About() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
+
+  const headerTitles = [
+    { url: "/", title: t("header.home") },
+    { url: "/projects", title: t("header.projects") },
+    { url: "/about", title: t("header.about") },
+    { url: "/contact", title: t("header.contact") }
+  ];
 
   return (
-    <Layout>
+    <Layout headerTitles={headerTitles}>
       <div className="flex flex-col mx-auto items-center">
         <p className="py-3 text-xl mx-auto text-center w-8/12 font-thin">
           {t("home.whoWeAre")}
@@ -50,7 +51,7 @@ export default function About() {
           alt="map"
           width={800}
           height={300}
-          priority />
+          />
       </div>
     </Layout>
   );
@@ -59,8 +60,7 @@ export default function About() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"]))
-      // Will be passed to the page component as props
+      ...(await serverSideTranslations(locale, ["common"], null, ['en', 'ch', 'fr']))
     }
   };
 }

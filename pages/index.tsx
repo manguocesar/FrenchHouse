@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Layout from "@/components/Layout";
@@ -6,10 +5,17 @@ import Intro from "@/components/Intro";
 
 
 export default function Home() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
+
+  const headerTitles = [
+    { url: "/", title: t("header.home") },
+    { url: "/projects", title: t("header.projects") },
+    { url: "/about", title: t("header.about") },
+    { url: "/contact", title: t("header.contact") }
+  ];
 
   return (
-    <Layout>
+    <Layout headerTitles={headerTitles}>
       <div className="flex flex-col">
         <p className="text-3xl font-medium font-sans">
           {t("home.customDesign")}
@@ -40,7 +46,7 @@ export default function Home() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"]))
+      ...(await serverSideTranslations(locale, ["common"], null, ['en', 'ch', 'fr']))
     }
   };
 }

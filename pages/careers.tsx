@@ -4,13 +4,18 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Layout from "@/components/Layout";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Careers() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
+
+  const headerTitles = [
+    { url: "/", title: t("header.home") },
+    { url: "/projects", title: t("header.projects") },
+    { url: "/about", title: t("header.about") },
+    { url: "/contact", title: t("header.contact") }
+  ];
 
   return (
-    <Layout>
+    <Layout  headerTitles={headerTitles}>
       <div className="flex flex-col pt-5 mx-auto">
         <Image
           className=""
@@ -18,7 +23,6 @@ export default function Careers() {
           alt="designBackground"
           width={900}
           height={200}
-          priority
         />
       </div>
       <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
@@ -66,8 +70,7 @@ export default function Careers() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"]))
-      // Will be passed to the page component as props
+      ...(await serverSideTranslations(locale, ["common"], null, ['en', 'ch', 'fr']))
     }
   };
 }

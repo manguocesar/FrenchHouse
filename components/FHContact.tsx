@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 export default function FHContact() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
 
   return (
     <>
@@ -13,7 +13,6 @@ export default function FHContact() {
         alt="xiao"
         width={250}
         height={250}
-        priority
       />
       <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
         {t("about.otherMembers")}

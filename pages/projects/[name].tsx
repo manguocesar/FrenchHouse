@@ -3,10 +3,12 @@ import projects from "../../const/projects.json";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Post = () => {
   const router = useRouter();
   const { name } = router.query;
+  const { t } = useTranslation();
 
   const [hideImageTwo, setHideImageTwo] = useState(false);
   const [hideImageThree, setHideImageThree] = useState(false);
@@ -15,8 +17,15 @@ const Post = () => {
 
   const object = projects.find((item) => item.name === name);
 
+  const headerTitles = [
+    { url: "/", title: t("header.home") },
+    { url: "/projects", title: t("header.projects") },
+    { url: "/about", title: t("header.about") },
+    { url: "/contact", title: t("header.contact") }
+  ];
+
   return (
-    <Layout>
+    <Layout headerTitles={headerTitles}>
       <div className="flex flex-col items-center mb-5">
         <p className="text-5xl font-bold">{object?.title}</p>
         <p className="text-3xl font-medium">{object?.buildings}</p>

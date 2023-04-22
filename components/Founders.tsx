@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 export default function Founders() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-row pt-5 columns-3 m-auto">
@@ -17,7 +17,6 @@ export default function Founders() {
           alt="romain"
           width={200}
           height={200}
-          priority
         />
         <p className="py-1 text-lg text-center font-semibold">CEO & Founder</p>
         <p className="py-1 text-lg text-center  font-thin mx-auto">
@@ -37,7 +36,6 @@ export default function Founders() {
           alt="xiao"
           width={200}
           height={200}
-          priority
         />
         <p className="py-1 text-lg text-center font-semibold">Lead Design</p>
         <p className="py-1 text-lg text-center  font-thin mx-auto">

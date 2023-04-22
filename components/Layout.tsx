@@ -1,11 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useTranslation } from "react-i18next";
 import Languages from "./Languages";
 import Menu from "./Menu";
 import {
   faInstagram,
-  faLinkedin,
   faWeixin,
   faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
@@ -35,8 +33,7 @@ function Social() {
   );
 }
 
-function Layout({ children }: any) {
-  const { t } = useTranslation("common");
+function Layout({ children, headerTitles }: any) {
   const router = useRouter();
 
   return (
@@ -49,7 +46,7 @@ function Layout({ children }: any) {
       </Head>
       <main className="flex flex-col p-10 bg-gray-50">
         {!router.asPath.includes("/projects/") && <Languages />}
-        <Menu />
+        <Menu headerTitles={headerTitles} />
         {children}
         <Social />
       </main>

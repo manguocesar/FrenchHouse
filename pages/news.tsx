@@ -1,20 +1,20 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import Layout from "@/components/Layout";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function News() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
+
+  const headerTitles = [
+    { url: "/", title: t("header.home") },
+    { url: "/projects", title: t("header.projects") },
+    { url: "/about", title: t("header.about") },
+    { url: "/contact", title: t("header.contact") }
+  ];
 
   return (
-    <Layout>
+    <Layout headerTitles={headerTitles}>
       <div className="flex flex-col pt-5">
         <p className="text-3xl font-medium pt-3">News</p>
       </div>
@@ -25,8 +25,7 @@ export default function News() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"]))
-      // Will be passed to the page component as props
+      ...(await serverSideTranslations(locale, ["common"], null, ['en', 'ch', 'fr']))
     }
   };
 }

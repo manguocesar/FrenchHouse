@@ -1,10 +1,8 @@
-import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import Image from "next/image";
 
 function Languages() {
-  const { t, i18n } = useTranslation("common");
+  const { i18n } = useTranslation();
 
   const changeLang = (lang: string) => {
     i18n.changeLanguage(lang);
