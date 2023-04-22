@@ -23,7 +23,8 @@ function ProjectList({ setKeyword, display, keyword }: Project) {
     "food & beverage",
     "retail",
     "hospitality",
-    "industrial"
+    "industrial",
+    "exhibition"
   ];
 
   return (
