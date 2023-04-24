@@ -14,6 +14,15 @@ export default function Home() {
     { url: "/contact", title: t("header.contact") }
   ];
 
+  const intro = [
+    { url: "office", name: t("header.office") },
+    { url: "F&B", name: t("header.f&b") },
+    { url: "hospitality", name: t("header.hospitality") },
+    { url: "industrial", name: t("header.industrial") },
+    { url: "retail", name: t("header.retail") }
+    // , "exhibition"
+  ];
+
   return (
     <Layout headerTitles={headerTitles}>
       <div className="flex flex-col">
@@ -26,7 +35,7 @@ export default function Home() {
         <p className="py-3 1 text-3xl font-extralight font-sans">
           {t("home.activity")}
         </p>
-        <Intro />
+        <Intro intro={intro} />
       </div>
       <div className="flex flex-col p-3">
         <p className="py-3 text-xl w-6/12 font-thin font-sans">

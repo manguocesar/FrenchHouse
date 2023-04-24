@@ -6,25 +6,39 @@
     "home": "首页",
     "projects": "项目",
     "about": "关于",
-    "contact": "联系"
+    "contact": "联系",
+    "office": "办公室",
+    "f&b": "食品饮料",
+    "hospitality": "酒店",
+    "industrial": "工业",
+    "retail": "零售",
+    "exhibition": "展览品"
   },
   "home": {
-    "customDesign": "Custom Design",
+    "customDesign": "自定义设计",
     "frenchHouse": "French House",
-    "activity": "Architecture, Interior design & Construction",
-    "whoWeAre": "FRENCH HOUSE is an Architecture, Interior, Engineering Design Company focusing on creating and delivering End-Use-Focused Facilities.",
-    "whoWeAreTxt": "As a global design company, our innovative projects enhance how people interact with their work environment to achieve business, people, space and brand objectives"
+    "activity": "建筑、室内设计和施工",
+    "whoWeAre": "FRENCH HOUSE是一家建筑、室内和工程设计公司，专注于创建和交付以最终用途为重点的设施。",
+    "whoWeAreTxt": "作为一家全球设计公司，我们的创新项目加强了人们与工作环境的互动，以实现商业、人员、空间和品牌目标"
   },
   "about": {
+    "yearsOfXp": "多年经验",
+    "globalOffices": "全球办事处",
+    "staffGlobally": "全球员工",
+    "yearsInChina": "在中国的年份",
+    "staffsInShanghai": "上海员工",
+    "projectsCompletedWorldwide": "全球已完成的项目",
     "Txt": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
     "TxtTwo": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
-    "people": "Who we are",
+    "people": "我们是谁",
     "peopleTxt": "NOUS DESIGNONS",
     "peopleTxtOne": "NOUS DESIGNONS",
     "peopleTxtTwo": "NOUS DESIGNONS",
     "founder": "Romain POIRIER",
+    "founderTitle": "首席执行官兼创始人",
     "founderTwo": "Xiao WULING",
-    "otherMembers": "WE TURN YOUR VISION INTO REALITY"
+    "founderTwoTitle": "领导设计",
+    "otherMembers": "我们将您的愿景变为现实"
   },
-  "allRights": "FrenchHouse Copyright - All rights reserved. Privacy & Terms"
+  "allRights": "FrenchHouse 版权所有-保留所有权利。隐私和条款"
 }

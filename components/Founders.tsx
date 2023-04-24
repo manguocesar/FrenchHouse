@@ -1,15 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { useTranslation } from "react-i18next";
 
-export default function Founders() {
-  const { t } = useTranslation();
-
+export default function Founders({ translations }: any) {
   return (
     <div className="flex flex-row pt-5 columns-3 m-auto">
       <div className="flex flex-col pt-5 w-6/12 mr-4">
         <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin underline">
-          {t("about.founder")}
+          {translations[0]}
         </p>
         <Image
           className="h-52"
@@ -18,7 +15,9 @@ export default function Founders() {
           width={200}
           height={200}
         />
-        <p className="py-1 text-lg text-center font-semibold">CEO & Founder</p>
+        <p className="py-1 text-lg text-center font-semibold">
+          {translations[1]}
+        </p>
         <p className="py-1 text-lg text-center  font-thin mx-auto">
           166 2135 6101
         </p>
@@ -28,7 +27,7 @@ export default function Founders() {
       </div>
       <div className="flex flex-col pt-5 w-6/12 ml-4">
         <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin underline">
-          {t("about.founderTwo")}
+          {translations[2]}
         </p>
         <Image
           className="h-52"
@@ -37,7 +36,9 @@ export default function Founders() {
           width={200}
           height={200}
         />
-        <p className="py-1 text-lg text-center font-semibold">Lead Design</p>
+        <p className="py-1 text-lg text-center font-semibold">
+          {translations[3]}
+        </p>
         <p className="py-1 text-lg text-center  font-thin mx-auto">
           138 1603 9981
         </p>

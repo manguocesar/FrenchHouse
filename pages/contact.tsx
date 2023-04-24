@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Layout from "@/components/Layout";
@@ -15,6 +14,15 @@ export default function Contact() {
     { url: "/about", title: t("header.about") },
     { url: "/contact", title: t("header.contact") }
   ];
+
+  const translations = [
+    t("about.founder"),
+    t("about.founderTitle"),
+    t("about.founderTwo"),
+    t("about.founderTwoTitle")
+  ];
+
+  const otherMembers = t("about.otherMembers");
 
   return (
     <Layout headerTitles={headerTitles}>
@@ -38,8 +46,8 @@ export default function Contact() {
         />
       </div>
 
-      <Founders />
-      <FHContact />
+      <Founders translations={translations} />
+      <FHContact otherMembers={otherMembers} />
       <Image
         className="flex flex-col mx-auto"
         src="/officeSh.jpg"
@@ -61,7 +69,11 @@ export default function Contact() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"], null, ['en', 'ch', 'fr']))
+      ...(await serverSideTranslations(locale, ["common"], null, [
+        "en",
+        "ch",
+        "fr"
+      ]))
     }
   };
 }

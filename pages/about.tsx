@@ -4,13 +4,15 @@ import { useTranslation } from "next-i18next";
 import Layout from "@/components/Layout";
 
 function DataAbout() {
+  const { t } = useTranslation();
+
   const dataAbout = [
-    { number: "57", title: "Years of Experience" },
-    { number: "4", title: "Global Offices" },
-    { number: "85", title: "Staff Globally" },
-    { number: "7", title: "Years in China" },
-    { number: "20", title: "Staffs in Shanghai" },
-    { number: "5000+", title: "Projects completed worldwide" }
+    { number: "57", title: t("about.yearsOfXp") },
+    { number: "4", title: t("about.globalOffices") },
+    { number: "85", title: t("about.staffGlobally") },
+    { number: "7", title: t("about.yearsInChina") },
+    { number: "20", title: t("about.staffsInShanghai") },
+    { number: "5000+", title: t("about.projectsCompletedWorldwide") }
   ];
 
   return (
@@ -46,12 +48,13 @@ export default function About() {
           {t("home.whoWeAre")}
         </p>
         <DataAbout />
-        <Image className="shadow-lg"
+        <Image
+          className="shadow-lg"
           src="/map.png"
           alt="map"
           width={800}
           height={300}
-          />
+        />
       </div>
     </Layout>
   );
@@ -60,7 +63,11 @@ export default function About() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"], null, ['en', 'ch', 'fr']))
+      ...(await serverSideTranslations(locale, ["common"], null, [
+        "en",
+        "ch",
+        "fr"
+      ]))
     }
   };
 }

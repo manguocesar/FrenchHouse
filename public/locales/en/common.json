@@ -6,7 +6,13 @@
     "home": "home",
     "projects": "projects",
     "about": "about",
-    "contact": "contact"
+    "contact": "contact",
+    "office": "office",
+    "f&b": "f&b",
+    "hospitality": "hospitality",
+    "industrial": "industrial",
+    "retail": "retail",
+    "exhibition": "exhibition"
   },
   "home": {
     "customDesign": "Custom Design",
@@ -16,6 +22,12 @@
     "whoWeAreTxt": "As a global design company, our innovative projects enhance how people interact with their work environment to achieve business, people, space and brand objectives"
    },
   "about": {
+    "yearsOfXp": "YEARS OF EXPERIENCE",
+    "globalOffices": "GLOBAL OFFICES",
+    "staffGlobally": "STAFF GLOBALLY",
+    "yearsInChina": "YEARS IN CHINA",
+    "staffsInShanghai": "STAFFS IN SHANGHAI",
+    "projectsCompletedWorldwide": "PROJECTS COMPLETED WORLDWIDE",
     "Txt": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
     "TxtTwo": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
     "people": "Who we are",
@@ -23,7 +35,9 @@
     "peopleTxtOne": "NOUS DESIGNONS",
     "peopleTxtTwo": "NOUS DESIGNONS",
     "founder": "Romain POIRIER",
+    "founderTitle": "CEO & Founder ",
     "founderTwo": "Xiao WULING",
+    "founderTwoTitle": "Lead Design",
     "otherMembers": "WE TURN YOUR VISION INTO REALITY"
   },
   "careers": {

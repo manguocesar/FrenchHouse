@@ -6,25 +6,40 @@
     "home": "accueil",
     "projects": "projets",
     "about": "a propos",
-    "contact": "contact"
+    "contact": "contact",
+    "office": "bureaux",
+    "f&b": "f&b",
+    "hospitality": "hotellerie",
+    "industrial": "industriel",
+    "retail": "retail",
+    "exhibition": "exhibition"
+
   },
   "home": {
-    "customDesign": "Custom Design",
+    "customDesign": "Design sur mesure",
     "frenchHouse": "French House",
-    "activity": "Architecture, Interior design & Construction",
-    "whoWeAre": "FRENCH HOUSE is an Architecture, Interior, Engineering Design Company focusing on creating and delivering End-Use-Focused Facilities.",
-    "whoWeAreTxt": "As a global design company, our innovative projects enhance how people interact with their work environment to achieve business, people, space and brand objectives"
+    "activity": "Architecture, Design Interieur & Construction",
+    "whoWeAre": "FRENCH HOUSE est une entreprise d'architecture, d'intérieur et d'ingénierie axée sur la création et la livraison d'installations axées sur l'utilisation finale.",
+    "whoWeAreTxt": "En tant que société de design mondiale, nos projets innovants renforcent l'interaction des personnes avec leur environnement de travail pour atteindre les objectifs commerciaux, humains, spatiaux et de marque."
   },
   "about": {
+    "yearsOfXp": "Années d'expérience",
+    "globalOffices": "Bureaux Internationaux",
+    "staffGlobally": "Equipe Mondiale",
+    "yearsInChina": "Années en Chine",
+    "staffsInShanghai": "Equipe à Shanghai",
+    "projectsCompletedWorldwide": "Total Projets Complétés",
     "Txt": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
     "TxtTwo": "Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem  Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem Nous sommes un collectif de passionés individus lorem ",
-    "people": "Who we are",
+    "people": "Qui nous sommes",
     "peopleTxt": "NOUS DESIGNONS",
     "peopleTxtOne": "NOUS DESIGNONS",
     "peopleTxtTwo": "NOUS DESIGNONS",
     "founder": "Romain POIRIER",
+    "founderTitle": "CEO et fondateur",
     "founderTwo": "Xiao WULING",
-    "otherMembers": "WE TURN YOUR VISION INTO REALITY"
+    "founderTwoTitle": "Design Leader",
+    "otherMembers": "NOUS FAISONS DE VOTRE VISION UNE REALITE"
   },
   "allRights":  "FrenchHouse Copyright - All rights reserved. Privacy & Terms"
 }

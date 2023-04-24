@@ -14,13 +14,15 @@ interface Project {
 
 function ProjectList({ setKeyword, display, keyword }: Project) {
   const changeSelection = (selection: string) => setKeyword(selection);
+
+  const { t } = useTranslation();
+
   const headerTitles = [
-    "offices",
-    "food & beverage",
-    "retail",
-    "hospitality",
-    "industrial",
-    "exhibition"
+    { url: "offices", name: t("header.office") },
+    { url: "food & beverage", name: t("header.f&b") },
+    { url: "retail", name: t("header.hospitality") },
+    { url: "industrial", name: t("header.industrial") },
+    { url: "exhibition", name: t("header.exhibition") }
   ];
 
   return (
@@ -29,15 +31,15 @@ function ProjectList({ setKeyword, display, keyword }: Project) {
         <p
           key={index}
           onClick={() => {
-            changeSelection(item);
+            changeSelection(item.url);
           }}
           className={
-            item === keyword
+            item.url === keyword
               ? "capitalize p-2 font-semibold text-xl hover:opacity-60 cursor-pointer"
               : "capitalize p-2 font-light text-md hover:opacity-60 cursor-pointer"
           }
         >
-          {item}
+          {item.name}
         </p>
       ))}
       {/* {display && (
