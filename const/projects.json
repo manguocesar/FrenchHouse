@@ -57,9 +57,11 @@
     "types": ["offices"],
     "buildings": "OFFICES + PANTRY + EVENT AREA",
     "services": [
-      "Design review",
-      "Material review",
+      "Interior Design",
+      "Tendering",
+      "MEP drawings",
       "Project Management",
+      "Construction supervision",
       "Cost management"
     ],
     "location": "Shanghai, China ",

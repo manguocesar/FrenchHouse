@@ -79,44 +79,43 @@ export default function Home() {
           alt="customerLogo"
           width={150}
           height={150}
-          
-          className="m-auto "
+          className="m-auto"
           key={i}
         />
       );
     }
-    return <div className="grid grid-cols-5 gap-2 mx-28">{content}</div>;
+    return <div className="grid grid-cols-5 gap-2">{content}</div>;
   };
 
   return (
     <Layout headerTitles={headerTitles}>
       <div className="flex mb-5">
-        {/* left list */}
-
         <ProjectList
           setKeyword={setKeyword}
           keyword={keyword}
           display={display}
         />
-
-        <div className="w-9/12 columns-3">
-          {projects.map((item, index) => (
-            <p className="p-2 cursor-pointer mb-4" key={index}>
-              <Link
-                href={`/projects/${item.name}`}
-                onMouseOver={() => {
-                  displayPicture(item.name);
-                }}
-                className={
-                  item.types.includes(keyword)
-                    ? "capitalize font-semibold text-lg hover:opacity-60"
-                    : "capitalize font-light text-md hover:opacity-60"
-                }
-              >
-                {item.title}
-              </Link>
-            </p>
-          ))}
+        <div>
+          <div className="columns-4">
+            {projects.map((item, index) => (
+              <p className="p-2 cursor-pointer mb-4" key={index}>
+                <Link
+                  href={`/projects/${item.name}`}
+                  onMouseOver={() => {
+                    displayPicture(item.name);
+                  }}
+                  className={
+                    item.types.includes(keyword)
+                      ? "uppercase font-semibold text-lg hover:opacity-60"
+                      : "uppercase font-light text-md hover:opacity-60"
+                  }
+                >
+                  {item.title}
+                </Link>
+              </p>
+            ))}
+          </div>
+          {returnCustomerLogo()}
         </div>
       </div>
       {/* <Image
@@ -126,7 +125,6 @@ export default function Home() {
         width={900}
         height={400}
       /> */}
-      {returnCustomerLogo()}
       <p className="pt-5 text-lg text-center font-thin font-sans">
         {t("allRights")}
       </p>

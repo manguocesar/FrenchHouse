@@ -45,7 +45,7 @@ function Layout({ children, headerTitles }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col p-10 bg-gray-50">
-        {!router.asPath.includes("/projects/") && <Languages />}
+        <Languages />
         <Menu headerTitles={headerTitles} />
         {children}
         <Social />
