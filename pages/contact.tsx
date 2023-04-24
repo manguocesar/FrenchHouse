@@ -26,13 +26,6 @@ export default function Contact() {
 
   return (
     <Layout headerTitles={headerTitles}>
-      <Image
-        className="mx-auto w-72"
-        src="/iconText.png"
-        alt="designBackground"
-        width={750}
-        height={400}
-      />
       <div className="flex flex-col pt-5 mx-auto">
         <p className="py-3 text-lg mx-auto text-center w-8/12 font-thin">
           {t("about.people")}

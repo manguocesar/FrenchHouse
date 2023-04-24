@@ -77,14 +77,15 @@ export default function Home() {
         <Image
           src={`/customerLogo/Picture${i + 1}.png`}
           alt="customerLogo"
-          width={300}
-          height={300}
-          className="h-16 w-32 m-auto"
+          width={150}
+          height={150}
+          
+          className="m-auto "
           key={i}
         />
       );
     }
-    return <div className="grid grid-cols-5 gap-4 mx-10">{content}</div>;
+    return <div className="grid grid-cols-5 gap-2 mx-28">{content}</div>;
   };
 
   return (
