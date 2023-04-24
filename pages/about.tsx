@@ -49,11 +49,11 @@ export default function About() {
         </p>
         <DataAbout />
         <Image
-          className="shadow-lg"
-          src="/map.png"
+          className=""
+          src="/officeMap.png"
           alt="map"
-          width={800}
-          height={300}
+          width={1200}
+          height={400}
         />
       </div>
     </Layout>

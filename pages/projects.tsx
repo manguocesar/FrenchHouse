@@ -70,6 +70,23 @@ export default function Home() {
     { url: "/contact", title: t("header.contact") }
   ];
 
+  const returnCustomerLogo = () => {
+    let content = [];
+    for (let i = 0; i < 45; i++) {
+      content.push(
+        <Image
+          src={`/customerLogo/Picture${i + 1}.png`}
+          alt="customerLogo"
+          width={300}
+          height={300}
+          className="h-16 w-32 m-auto"
+          key={i}
+        />
+      );
+    }
+    return <div className="grid grid-cols-5 gap-4 mx-10">{content}</div>;
+  };
+
   return (
     <Layout headerTitles={headerTitles}>
       <div className="flex mb-5">
@@ -101,13 +118,14 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Image
+      {/* <Image
         className="my-4 mx-auto"
         src="/customers.png"
         alt="designBackground"
         width={900}
         height={400}
-      />
+      /> */}
+      {returnCustomerLogo()}
       <p className="pt-5 text-lg text-center font-thin font-sans">
         {t("allRights")}
       </p>
