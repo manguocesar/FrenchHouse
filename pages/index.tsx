@@ -3,7 +3,6 @@ import { useTranslation } from "next-i18next";
 import Layout from "@/components/Layout";
 import Intro from "@/components/Intro";
 
-
 export default function Home() {
   const { t } = useTranslation();
 
@@ -35,15 +34,15 @@ export default function Home() {
         <p className="py-3 1 text-3xl font-extralight font-sans">
           {t("home.activity")}
         </p>
+        <div className="flex flex-col py-3">
+          <p className="py-3 text-xl w-6/12 font-thin font-sans">
+            {t("home.whoWeAre")}
+          </p>
+          <p className="text-lg w-8/12 leading-8 font-thin text-justify font-sans">
+            {t("home.whoWeAreTxt")}
+          </p>
+        </div>
         <Intro intro={intro} />
-      </div>
-      <div className="flex flex-col p-3">
-        <p className="py-3 text-xl w-6/12 font-thin font-sans">
-          {t("home.whoWeAre")}
-        </p>
-        <p className="text-lg w-8/12 leading-8 font-thin text-justify font-sans">
-          {t("home.whoWeAreTxt")}
-        </p>
       </div>
       <p className="pt-5 text-lg text-center font-thin font-sans">
         {t("allRights")}
@@ -55,7 +54,11 @@ export default function Home() {
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"], null, ['en', 'ch', 'fr']))
+      ...(await serverSideTranslations(locale, ["common"], null, [
+        "en",
+        "ch",
+        "fr"
+      ]))
     }
   };
 }
